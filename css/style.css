@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: #d4ccb6;
+}
+
+.primary {
+  color: #ffc632;
+  font-size: 12px;
+}
+
+.formText {
+  color: #afb6c2;
+  font-size: 13px;
+}
+
+.ALink {
+  text-decoration: none;
+}
+
+.highlight {
+  outline: 2px #ffc632 solid !important;
+  border: none !important;
+}
+
+.hide {
+  display: none;
+}
+
+.primary:hover {
+  color: #f8dfa1;
+}
+
+.BoxColorYellow {
+  background-color: #ffc632 !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .FormPage {
+    height: 100vh;
+    width: 100vw;
+    background-color: #191816;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .FormPage .Left {
+    justify-self: center;
+    align-self: center;
+  }
+  .FormPage .Left .logo {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+  }
+  .FormPage .Left .FormBox {
+    width: 80vw;
+    min-height: 60vh;
+    background-color: #24221f;
+  }
+  .FormPage .Left .FormBox .Login {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  .FormPage .Left .FormBox .Login #log-in {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  .FormPage .Left .FormBox .Login #Login {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+  .FormPage .Left .FormBox .form {
+    width: 90%;
+    margin: auto;
+  }
+  .FormPage .Left .FormBox .form .InsertInformationAttention {
+    margin-top: 0;
+  }
+  .FormPage .Left .FormBox .form label {
+    display: block;
+    margin-top: 2rem;
+  }
+  .FormPage .Left .FormBox .form .InputContainer {
+    position: relative;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconNormalL {
+    position: absolute;
+    transform: translate(0, 50%);
+    padding-left: 7px;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconFocusL {
+    position: absolute;
+    transform: translate(0, 50%);
+    padding-left: 7px;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconNormalR {
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%, 50%);
+    padding-right: 10px;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconCloseR {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 100%;
+    transform: translate(-100%, 50%);
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .inputBox {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border: 2px #afb6c2 solid;
+    border-radius: 5px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    caret-color: transparent;
+  }
+  .FormPage .Left .FormBox .form #email {
+    color: black;
+  }
+  .FormPage .Left .FormBox .form #password {
+    color: black;
+  }
+  .FormPage .Left .FormBox .form .InlineBlock {
+    display: inline-block;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer {
+    position: relative;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .checkBox {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .CheckImg {
+    position: absolute;
+    margin-top: 2.2rem;
+    margin-left: 0.15rem;
+    z-index: 1;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .checkboxOriginal {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-left: 0;
+    appearance: none;
+    z-index: 2;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .RemindText {
+    padding-left: 2rem;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .R {
+    float: right;
+    margin-top: 2rem;
+  }
+  .FormPage .Left .FormBox .form .button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #ffc632;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+  }
+  .FormPage .Left .FormBox .form .SignUp {
+    text-align: center;
+  }
+  .FormPage .Right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 701px) {
+  .FormPage {
+    height: 100vh;
+    width: 100vw;
+    background-color: #191816;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .FormPage .Left {
+    justify-self: center;
+    align-self: center;
+  }
+  .FormPage .Left .logo {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+  .FormPage .Left .FormBox {
+    width: 40vw;
+    min-height: 60vh;
+    background-color: #24221f;
+  }
+  .FormPage .Left .FormBox .Login {
+    display: flex;
+    width: 70%;
+    margin: auto;
+  }
+  .FormPage .Left .FormBox .Login #log-in {
+    display: inline-block;
+    margin-top: 4rem;
+  }
+  .FormPage .Left .FormBox .Login #Login {
+    display: inline-block;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+  .FormPage .Left .FormBox .form {
+    width: 85%;
+    margin: auto;
+  }
+  .FormPage .Left .FormBox .form .InsertInformationAttention {
+    margin-top: 0;
+  }
+  .FormPage .Left .FormBox .form label {
+    display: block;
+    margin-top: 2rem;
+  }
+  .FormPage .Left .FormBox .form .InputContainer {
+    position: relative;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconNormalL {
+    position: absolute;
+    transform: translate(0, 50%);
+    padding-left: 7px;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconFocusL {
+    position: absolute;
+    transform: translate(0, 50%);
+    padding-left: 7px;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconNormalR {
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%, 50%);
+    padding-right: 10px;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .IconCloseR {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 100%;
+    transform: translate(-100%, 50%);
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .FormPage .Left .FormBox .form .InputContainer .inputBox {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border: 2px #afb6c2 solid;
+    border-radius: 5px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    caret-color: transparent;
+  }
+  .FormPage .Left .FormBox .form #email {
+    color: black;
+  }
+  .FormPage .Left .FormBox .form #password {
+    color: black;
+  }
+  .FormPage .Left .FormBox .form .InlineBlock {
+    display: inline-block;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer {
+    position: relative;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .checkBox {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .CheckImg {
+    position: absolute;
+    margin-top: 2.2rem;
+    margin-left: 0.15rem;
+    z-index: 1;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .checkboxOriginal {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-left: 0;
+    appearance: none;
+    z-index: 2;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .RemindText {
+    padding-left: 2rem;
+  }
+  .FormPage .Left .FormBox .form .checkBoxContainer .R {
+    float: right;
+    margin-top: 2rem;
+  }
+  .FormPage .Left .FormBox .form .button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #ffc632;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+  }
+  .FormPage .Left .FormBox .form .SignUp {
+    text-align: center;
+  }
+  .FormPage .Right {
+    justify-self: center;
+    align-self: center;
+  }
+  .FormPage .Right img {
+    max-height: 100vh;
+    max-width: 50vw;
+  }
+}/*# sourceMappingURL=style.css.map */
